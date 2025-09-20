@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF Converter Demo - Ahmed Mini Softwares</title>
+<link rel="stylesheet" href="../../css/product.css">
+
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <ul>
+    <li><a href="../../index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="https://youtu.be/g0uL0nnPh64" target="_blank" class="active">Demo</a></li>
+      <li style="position: relative;">
+        <button id="supportBtn" class="btn support">Support Me</button>
+
+        <!-- PayPal Popup -->
+        <div id="paypalPopup" class="paypal-popup" style="
+          display: none;
+          position: absolute;
+          top: 45px;
+          right: 0;
+          width: 300px;
+          max-height: 400px;
+          overflow-y: auto;
+          background-color: #FFF8DC;
+          border: 1px solid #D4AF37;
+          border-radius: 8px;
+          padding: 10px;
+          z-index: 9999;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        ">
+          <div id="paypal-button-small"></div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="demo">
+  <h1>PDF Converter</h1>
+  <p class="subtitle">Convert Word, Excel, and Images to PDF in seconds.</p>
+
+  <div class="demo-grid">
+    <div class="screenshot">
+      <!-- Main image and thumbnails -->
+      <img id="main-img" src="media/step1_download.jpg" alt="PDF Converter Step 1">
+
+      <div class="thumbs">
+        <img src="media/step1_download.jpg" class="active" alt="Step 1" data-caption="Step 1: Download RAR">
+        <img src="media/step2_open_rar.jpg" alt="Step 2" data-caption="Step 2: Open RAR File">
+        <img src="media/step3_select_files.jpg" alt="Step 3" data-caption="Step 3: Select Files">
+        <img src="media/step4_software_view.jpg" alt="Step 4" data-caption="Step 4: View in Software">
+        <img src="media/step5_rename.jpg" alt="Step 5" data-caption="Step 5: Rename Files">
+        <img src="media/step6_output.jpg" alt="Step 6" data-caption="Step 6: Output Folder">
+      </div>
+
+    </div>
+
+    <div class="info">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Fast & Lightweight (no extra installs)</li>
+        <li>Convert Word, Excel, Images → PDF</li>
+        <li>Simple & Clean Interface</li>
+        <li>Works Offline</li>
+      </ul>
+
+      <p class="meta">
+        <strong>File Size:</strong> 3.2 MB <br>
+        <strong>Version:</strong> 1.0.0 <br>
+        <strong>Format:</strong> EXE (Windows)
+      </p>
+
+      <div class="cta">
+        <button class="btn">Download Demo</button>
+        <button class="btn secondary">Buy Full Version</button>
+      </div>
+
+      <!-- Rating -->
+      <div class="rating">
+        <h3>Rate this Tool:</h3>
+        <div class="stars">
+          <span data-value="1">&#9733;</span>
+          <span data-value="2">&#9733;</span>
+          <span data-value="3">&#9733;</span>
+          <span data-value="4">&#9733;</span>
+          <span data-value="5">&#9733;</span>
+        </div>
+      </div>
+
+      <!-- Reviews -->
+      <div class="comments">
+        <h3>Write a Review:</h3>
+        <input type="text" id="review-name" placeholder="Name or Email (required)">
+        <input type="text" id="review-location" placeholder="Location/Country (optional)">
+        <textarea id="review-text" placeholder="Write your review..."></textarea>
+        <button class="btn secondary" id="submit-review">Submit</button>
+        <ul class="comment-list" id="review-list"></ul>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<footer>
+  © <span id="year"></span> Ahmed Mini Softwares — Built with Python & ❤️
+</footer>
+
+<script src="../../js/product.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AbDsUYA-obC2sHFZvv9R4Ce9gYfAqnpuoCNiLDQYeF0cUJdYFSEeuiwRk82Lr3S2NPrMUg97BhCbbVNv&currency=USD"></script>
+
+</body>
+</html>
